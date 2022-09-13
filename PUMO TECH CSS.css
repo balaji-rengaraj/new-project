@@ -1,0 +1,1083 @@
+/* <=================== FONTS LINKS ================> */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* <=================== GLOBAL CSS START================> */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Arial', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Poppinsar', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-btn {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #ffc600;
+	padding: 0 35px;
+	font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+	line-height: 50px;
+	border-radius: 5px;
+    color: #07294d;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #ffc600;
+}
+.main-btn:hover{
+    color: #ffc600;
+    border-color: #07294d;
+    background-color: #07294d;
+    transform: translateY(5px);
+    text-decoration: none;
+}
+
+
+.flex-design {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .content {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.mt {
+    margin-top: 3rem;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.mb {
+    margin-bottom: 3rem;
+}
+
+.mt {
+    margin-top: 3rem;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.text-center-form {
+    text-align: center!important;
+}
+
+/* <=================== GLOBAL CSS ENDS================> */
+
+
+/* <=================== NAVIGATION BAR START================> */
+
+header{
+    background-position: center;
+    position: relative;
+}
+
+.nav-bar {
+    min-width: 100%;
+    padding: 0 2rem;
+    height: 15vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+
+.nav-bar-logo {
+    height: 80px;
+    width: 300px;
+}
+
+.nav-links {
+    width: 60%;
+}
+
+.nav-links li a {
+    color: navy;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-links li::after {
+    content: "";
+    display:block;
+    background-color: gold;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 300ms;
+
+}
+
+.nav-links li:hover::after{
+    transform: scaleX(1);
+}
+
+
+.burger {
+    display: none;
+    color: blue;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    right: 10px;
+}
+
+.fa-bars{
+    color: navy;
+}
+
+/* <=================== NAVIGATION BAR ENDS ================> */
+
+/* <=================== CAROUSEL PART START================> */
+
+.d-block {
+    position: relative;
+    z-index: -1;
+}
+
+.text-center {
+    color: white;
+    position: absolute;
+    top: 33rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: all 300ms;
+    z-index: 1;
+}
+
+.text-center h1 {
+    margin: 1.2rem 0;
+}
+
+.text-center h1 span {
+    color: red;
+    font-weight: bolder;
+}
+/* <=================== CAROUSEL PART ENDS================> */
+
+
+
+/* <=================== WHAT WE DO PART START================> */
+
+.wwd-box {
+    background-color: gold;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+}
+
+.wwd-box h3 {
+    margin-bottom: 5px;
+}
+
+
+.wwd-box:hover {
+    box-shadow: 1px 3px 8px 0px black;
+}
+
+
+/* <=================== WHA WE DO PART ENDS ================> */
+
+
+
+
+/* <=================== OUR VENDORS PART START================> */
+.vendors_image {
+    position: relative;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.vendors_image img {
+    display: block;
+    border: 3px solid rgb(170, 145, 5);
+}
+
+.vendors_image::after {
+    position: absolute;
+    content: '';
+    border-radius: 9px;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform 250ms;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.vendors:hover .vendors_image::after {
+    transform: scale(1);
+    transform-origin: left;
+
+}
+
+.vendors {
+    position: relative;
+}
+
+.vendors_content {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: gold;
+    transition: top 10ms;
+    transition-delay: 200ms;
+    display: none;
+}
+
+.vendors_content h3 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+.vendors:hover .vendors_content {
+    top: 50%; 
+    opacity: 5;
+    display: block;
+}
+
+
+.vendors-content {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+}
+/* <=================== OUR VENDORS PART ENDS ================> */
+
+
+/* <=================== QUICK ENQUIRY PART START================> */
+
+.enquiry-form {
+    color: rgb(247, 247, 110);
+
+}
+
+
+.col-lg-5 {
+    position: absolute;
+    margin-top: 14rem;
+    left: 16rem;
+   
+}
+
+
+
+.category-form {
+	border-radius: 5px;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 75px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 75px 0px rgba(0,0,0,0.1);
+	margin-top: -154px;
+}
+.category-form .form-title{
+    
+    background-color: #07294d;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+.category-form .form-title h3{
+    color: #ffc600;
+    font-size: 36px;
+}
+.category-form .form-title span{
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+.category-form .main-form{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    
+}
+.category-form .main-form .singel-form{
+    margin-top: 20px;
+}
+.category-form .main-form .singel-form input{
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    font-size: 15px;
+    color: #8a8a8a;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+}
+.category-form .main-form .singel-form .main-btn{
+    width: 100%;
+    line-height: 60px;
+    margin-top: 20px;
+}
+
+/* <=================== QUICK ENQUIRY FORM PART ENDS================> */
+
+
+/* <=================== MARQUEE PART START================> */
+
+.marquee {
+    padding: 50px 0px;
+    width: 100%;
+}
+
+.marquee .marquee-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee .m-pic-container {
+    display: flex;
+    animation: marquee 10s infinite linear;
+}
+
+.marquee .m-pic-container .pic {
+    flex-basis: 28%;
+    flex-shrink: 0;
+}
+
+.marquee img {
+    width: 100%;
+    height: 60vh;
+    /* object-fit: cover; */
+    border: 1px solid white;
+}
+
+
+
+
+/* <=================== MARQUEE PART ENDS ================> */
+
+
+
+/* <=================== COUNTERS PART START================> */
+
+
+.containerss {
+    position: relative;
+    width: 60%;
+    /* max-width: 1100px; */
+    margin: auto;
+    /* overflow: auto; */
+    justify-content: space-between;
+}
+
+.counters {
+    position: relative;
+    background-color: rgba(211, 211, 211, 0.329);
+    color: rgb(15, 15, 102);
+    padding: 40px 20px;
+}
+
+.counters .containerss {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+}
+
+svg{
+    width: 50px;
+    height: 50px;
+}
+
+.counters svg {
+    color: gold;
+    margin-bottom: 5px;
+}
+
+.counters .counter {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+
+.counters .bi:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+/* <=================== COUNTERS PART ENDS ================> */
+
+
+/* <=================== COURSES AVAILABILITY TABLE PART STARTS ================> */
+
+.table-section {
+    background: linear-gradient(rgba(255, 217, 0, 0.644),rgba(255, 217, 0, 0.322));
+    padding: 2rem 0;
+}
+
+.table th,td {
+    padding: 1rem;
+}
+
+.table th {
+    color: var(--secondary);
+    background-color: white;
+    border-collapse: collapse;
+}
+
+.table-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.table tr {
+    transition: transform 300ms;
+}
+
+.table tr:not(:first-child):hover {
+    transform: scale(1.03);
+}
+
+.table tr:nth-child(odd) {
+    background-color: rgba(23, 23, 134, 0.521);
+    color: white;
+}
+
+.table tr:nth-child(even) {
+    color: white;
+    background-color: orange;
+}
+
+.table tr a {
+    color: rgba(15, 15, 161, 0.918);
+    text-decoration: none;
+    background-color: white;
+    padding: 6px 10px;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    filter: drop-shadow(-20px -5px 10px);
+}
+
+
+/* <=================== COURSES AVAILABILITY TABLE PART ENDS ================> */
+
+
+
+/* <=================== TRAINERS PART START================> */
+
+.trainers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #161623;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+
+.trainers::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(35% at right 80%);
+}
+.trainers::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 20%);
+}
+.container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;    
+}
+.container .card{
+    position: relative;
+    width: 260px;
+    height: 500px;
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    margin: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px) saturate(180%);
+}
+.container .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.7;
+    transition: .5s;
+}
+.container .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+.container .card .sci li{
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: .5s;
+    transition-delay: calc(0.1s *var(--i));
+}
+.container .card:hover .sci li{
+    transform: translateY(30px);
+    opacity: 1;
+}
+hr{
+    margin: auto;
+    width: 69%;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+p{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.container .card .sci li  a {
+    color: white;
+    font-size: 24px;
+}
+.container .card:hover .content{
+    opacity: 1;
+}
+.container .card .content .contentBx h3{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1rem;
+}
+
+.container .card .content .contentBx p{
+    color: #fff;
+}
+
+.container .card .content .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0,0,0,0.25);
+
+}
+.container .card .content .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* <=================== TRAINERS PART ENDS ================> */
+
+
+/* <=================== CONTACT US FORM START================> */
+
+input,textarea {
+    display: block;
+    width: 100%;
+    border: 2px;
+    margin-bottom: 1rem;
+    padding: 6px;
+    border-bottom: 2px solid gold;
+}
+
+input:focus, textarea:focus {
+    border: none;
+    color: white;
+    outline: none;
+    background-color: rgb(247, 247, 110);
+    border-bottom: 1px solid rgba(247, 247, 110, 0.671);
+
+}
+
+section .form {
+    background-color: rgba(211, 211, 211, 0.322)
+}
+
+.form h2 {
+    margin-bottom: 2rem;
+}
+
+.form h2::after {
+    /* content: ''; */
+    display: block;
+    height: 2px;
+    width: 10%;
+    background-color: rgb(247, 247, 110);
+}
+
+/* <=================== CONTACT US FORM ENDS ================> */
+
+
+/* <=================== OUR BRANCES PART START================> */
+
+.branch .bi {
+    color: rgb(243, 13, 13);
+    margin-right: 15px;
+    top: 100px;
+    width: 30px;
+}
+
+.branch .bi {
+    transition: transform 300ms;
+}
+
+.branch:hover .bi {
+    transform: translateY(5px) scale(1.1);
+}
+
+
+.our-branches {
+    background-color: rgba(211, 211, 211, 0.322);
+}
+
+
+.branches-details {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 20px 0;
+}
+
+.our-branches .branches-details .branch a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.branches-heading h2 {
+    top: 20px;
+}
+
+
+.branches-details, .hand-icon .click-me {
+    color: #f00;
+    font-weight: bolder;
+}
+
+.branches-details .hand-icon .bi, .click-me {
+    color: #ffc600;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: myfirst 1s linear 2s infinite ;
+      
+     
+}
+
+@keyframes myfirst {
+    0%   {  top:0px;}
+    50%  { top:30px;}
+    100% {  top:0px;}
+}
+
+/* <=================== OUR BRANCES PART START================> */
+
+
+
+/* <=================== ABOUT US PART START================> */
+
+.about-us-text {
+    position: relative;
+    padding: 2rem;
+}
+
+.about-us-text::after {
+    content:'';
+    position: absolute;
+    inset: -40px 0  -100px;
+    background-image: url(./images/Pumo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.10;
+    z-index: -1;
+}
+
+/* <=================== ABOUT US PART ENDS ================> */
+
+
+/* <=================== OUR PLACEMENTS PART START================> */
+
+.our-placements {
+    background-color: rgb(247, 247, 110);
+    padding: 3rem ;
+    color: black;
+}
+
+.students-image {
+    width: 100%;
+}
+
+.placements {
+    margin-top: 3rem;
+}
+
+.feedback {
+    width: 100%;
+    padding: 2rem;
+    line-height: 1.8rem;
+}
+
+.placements:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* <=================== OUR PLACEMENT PART ENDS ================> */
+
+
+/* <=================== FOOTER PARTS START================> */
+
+.footer-content {
+    position: static;
+}
+
+
+
+.footer-logo {
+    width: 80px;
+    height: 75px;
+
+}
+
+.footer-library h3, p {
+    color: #0d1137;
+}
+
+.footer-top {
+    background-color: rgba(255, 217, 0, 0.527);
+    color: black;
+}
+
+.footer-links li a{
+    color: black;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.footer-links {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: auto auto ;
+    padding: 10px 0;
+}
+
+
+.footer-content .sci {
+    position: absolute;
+    display: flex;
+    width: 60px;
+    right: 350px;
+    z-index: 2;
+    margin-top: -30px;
+}   
+
+.footer-content .sci .fab {
+    color: #0d1137;
+    font-size: 24px;
+    padding: 0 10px;
+    
+}
+
+.footer-top-container {
+    display: flex;
+    padding: 0 2rem;
+    height: 20vh;
+    
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: rgba(0, 0, 128, 0.308);
+    color: white;
+    bottom: 0%;
+}
+
+/* <=================== FOOTER PART ENDS ================> */
+
+
+
+
+
+
+/* <=================== HAMBURGER MEDIA QUIRY ================> */
+
+@media only screen and (max-width:1210px){
+    
+    .nav-bar {
+        position: relative;
+    }
+
+    .nav-links{
+        /* display: none; */
+        position: absolute;
+        flex-direction: column;
+        background-color: rgba(0, 0, 128, 0.26);
+        right: -100px;
+        top: 15vh;
+        height: 50vh;
+        width: 0%;
+        padding: .5rem 0;
+        transition: all 150ms;
+        z-index: 1;
+    }
+    .burger{
+        display: block;
+    }
+
+}
+
+.nav-show {
+    width: 100%;
+    right: 0px;
+
+}
+
+.textareahide {
+    left: 15rem;
+}
+
+
+/* <=================== CAROUSEL MEDIA QUIRY ================> */
+
+@media only screen and (max-width:895px){
+    .text-center {
+        display: none;
+    }
+    .d-block{
+        z-index: -1;
+    }
+}
+
+
+/* <=================== WHAT WE DO PART MEDIA QUIRY ================> */
+
+@media only screen and (max-width:895px){
+    .wwd-content {
+        flex-direction: column;
+    }
+    .wwd-box {
+        margin-left: 0px;
+        margin-top: 10px;   
+    }
+    .wwd-box:first-child{
+        margin-top: 0px;
+    }
+   
+}
+
+/* <=================== QUICK ENQUIRY FORM MEDIA QUIRY ================> */
+
+@media only screen and (max-width:895px) {
+    .enquiry-form {
+        position: relative;
+        left: -16rem;
+
+    }
+}
+
+/* <=================== MARQUEE PART MEDIA QUIRY ================> */
+
+@media (max-width: 1024px) {
+    .marquee .m-pic-container .pic {
+        flex-basis: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .marquee .m-pic-container .pic {
+        flex-basis: 33.33%;
+    }
+}
+
+
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-125%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    @keyframes marquee {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-186.65%);
+        }
+    }
+}
+
+/* <=================== COUNTERS PART MEDIA QUIRY ================> */
+
+@media (max-width: 925px) {
+    .counters .containerss {
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters .containerss > div:nth-of-type(1),.counters .containerss > div:nth-of-type(2) {
+        border-bottom: 1px lightskyblue solid;
+        padding-bottom: 20px;
+    }
+
+    .containerss h3{
+        font-size: 15px;
+    }
+}
+
+/* <=================== OUR PLACEMENTS PART MEDIA QUIRY ================> */
+
+@media only screen and (max-width:840px)
+{
+    .placements {
+        flex-direction: column;
+    }
+    .placements:nth-child(even){
+        flex-direction: column;
+    }
+    .feedback {
+        min-height: 10vh;
+    }
+}
+
+
+
+/* <=================== FOOTER PART MEDIA QUIRY ================> */
+
+@media only screen and (max-width:910px) {
+    
+   
+    footer .footer-library {
+       display: none;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    footer .icons {
+        display: none;
+    }
+
+    .footer-links {
+        position: absolute;
+        font-size: small;
+        right: 20px;
+        margin-top: 0%;
+        height: -5vh;
+    }
+    .footer-bottom p {
+        display: none;
+    }
+
+    .hit-counter, a{
+        right: -10rem;
+    }
+}
+
+
+
+
+
+
+
